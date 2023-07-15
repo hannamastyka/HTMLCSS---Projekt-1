@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Strona z kontenerem</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-home {
+            height: 100vh;
+            background-color: lightgray;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: 2px solid #007bff;
+            cursor: pointer;
+            transition: background-color 1s, color 1s;
+        }
+
+        .button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .section-oferta {
+            height: 500px;
+            background-color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="section-home">
+            <h1>Treść sekcji Strona Główna</h1>
+            <h2>Nasza firma oferuje najwyższej jakości produkty.
+
+            </h2>
+            <h3>Nie wierz nam na słowo - sprawdż</h3>
+            <button class="button" onclick="scrollToOferta()">Oferta</button>
+        </section>
+
+        <section class="section-oferta">
+            <h1>Treść sekcji Oferta</h1>
+        </section>
+    </div>
+
+    <script>
+        function scrollToOferta() {
+            const ofertaSection = document.querySelector('.section-oferta');
+            ofertaSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+
+
+<html>
+
+<head>
+    <title>Strona z nawigacją</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            height: 100vh;
+            background: url('link/do/obrazka.jpg') center/cover no-repeat;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .navigation {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        .navigation ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navigation li {
+            margin-right: 20px;
+        }
+
+        .navigation li:last-child {
+            margin-right: 0;
+        }
+
+        .navigation a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navigation a.disabled {
+            cursor: not-allowed;
+        }
+
+        .section {
+            height: 1000px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="overlay"></div>
+        <!-- Treść i elementy w nagłówku -->
+    </header>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="#o-nas">O nas</a></li>
+            <li><a href="#oferta">Oferta</a></li>
+            <li><a class="disabled" href="#">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <section id="o-nas" class="section">
+        <h2>O Nas</h2>
+        <p>Treść sekcji O Nas</p>
+    </section>
+
+    <section id="oferta" class="section">
+        <h2>Oferta</h2>
+        <p>Treść sekcji Oferta</p>
+    </section>
+</body>
+
+</html>
+
+
+<html>
+
+<head>
+    <title>Strona z nawigacją</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section {
+            padding: 40px 0;
+        }
+
+        .section-home {
+            height: 100vh;
+            background: url('link/do/obrazka.jpg') center/cover no-repeat;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .navigation {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        .navigation ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navigation li {
+            margin-right: 20px;
+        }
+
+        .navigation li:last-child {
+            margin-right: 0;
+        }
+
+        .navigation a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navigation a.disabled {
+            cursor: not-allowed;
+        }
+
+        .section-pracownicy {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .pracownik {
+            width: 250px;
+            height: 250px;
+            margin: 10px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.5s;
+        }
+
+        .pracownik:hover {
+            transform: scale(1.05);
+        }
+
+        .pracownik:nth-of-type(odd) {
+            background-image: url('link/do/zdjecia1.jpg');
+        }
+
+        .pracownik:nth-of-type(even) {
+            background-image: url('link/do/zdjecia2.jpg');
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="section section-home">
+            <div class="overlay"></div>
+            <!-- Treść i elementy w nagłówku -->
+        </section>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="#o-nas">O nas</a></li>
+                <li><a href="#oferta">Oferta</a></li>
+                <li><a class="disabled" href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <section id="o-nas" class="section">
+            <h2>O Nas</h2>
+            <div class="section-pracownicy">
+                <div class="pracownik"></div>
+                <div class="pracownik"></div>
+                <div class="pracownik"></div>
+                <div class="pracownik"></div>
+            </div>
+        </section>
+
+        <section id="oferta" class="section">
+            <h2>Oferta</h2>
+            <div class="section-pracownicy">
+                <div class="pracownik"></div>
+                <div class="pracownik"></div>
+                <div class="pracownik"></div>
+                <div class="pracownik"></div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
