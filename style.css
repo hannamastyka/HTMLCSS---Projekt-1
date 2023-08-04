@@ -1,0 +1,152 @@
+.worker-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.worker-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: green;
+}
+
+.worker {
+  display: flex;
+  margin: 15px 0;
+  gap: 30px;
+  align-items: center;
+}
+
+.worker:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.worker:nth-child(even) .worker-desc {
+  text-align: right;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.background-image {
+  position: relative;
+}
+
+.background-image img {
+  width: 100%;
+  height: auto;
+  max-width: 1920px;
+  max-height: 1080px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.button {
+  display: inline-block;
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid white;
+  text-decoration: none;
+  transition: background-color 1s, color 1s;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.section-o-nas {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.employee {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 20px;
+}
+
+.employee-left {
+  float: left;
+}
+
+.employee-right {
+  float: right;
+}
+
+.section-oferta {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  margin: 20px;
+  transition: transform 0.5s;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
