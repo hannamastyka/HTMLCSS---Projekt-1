@@ -1,119 +1,36 @@
-<!DOCTYPE html>
-<html>
+<html lang="pl">
   <head>
-    <title>Project</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project strony www</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>O nas</li>
-        <li>Oferta</li>
-        <li>Kontakt</li>
-      </ul>
-    </nav>
-    <head>
-      <h1>Nasi specjaliści</h1>
-      <p>Drugi tekst</p>
-    </head>
-    <selection class="about us"> 
-      <div class="container">
-      <div class="worker-container">
-        <div class="worker">
-          <div class="worker-image">
-
-          </div>
-          <h2 class="worker-name">Imie nazwisko</h2>
-          <p class="worker-desc">dział</p>
-        </div>
-      </div>
-      </div>
-    </selection>
-  </body>
-</html>
-
-  
-
     <div class="container">
       <section class="section-home">
-        <h1>Treść sekcji Strona Główna</h1>
+        <h1>moja firma</h1>
         <h2>Nasza firma oferuje najwyższej jakości produkty.</h2>
         <h3>Nie wierz nam na słowo - sprawdż</h3>
-        <button class="button" onclick="scrollToOferta()">Oferta</button>
+        <ul>
+          <li><a href="oferts">Oferta</a></li>
+        </ul>
       </section>
 
       <section class="section-oferta">
         <h1>Treść sekcji Oferta</h1>
       </section>
     </div>
-
-    <script>
-      function scrollToOferta() {
-        const ofertaSection = document.querySelector(".section-oferta");
-        ofertaSection.scrollIntoView({ behavior: "smooth" });
-      }
-    </script>
+    <nav>Element z tekstem "moja firma" i linkami</nav>
+    <header>Element ze zdjęciem w tle, tytułem i linkiem do oferty</header>
+    <main>
+      <section>Sekcja z pracownikami</section>
+      <section>Sekcja z ofertą (boxy)</section>
+    </main>
+    <footer>Stopka z cypyrights i ikonami Facebook oraz Instagram</footer>
   </body>
 
   <html>
     <head>
       <title>Strona z nawigacją</title>
-      <style>
-        body {
-          margin: 0;
-          padding: 0;
-        }
-
-        .header {
-          height: 100vh;
-          background: url("link/do/obrazka.jpg") center/cover no-repeat;
-          position: relative;
-        }
-
-        .overlay {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(0, 0, 0, 0.5);
-        }
-
-        .navigation {
-          background-color: #333;
-          color: white;
-          padding: 20px;
-        }
-
-        .navigation ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          display: flex;
-          justify-content: center;
-        }
-
-        .navigation li {
-          margin-right: 20px;
-        }
-
-        .navigation li:last-child {
-          margin-right: 0;
-        }
-
-        .navigation a {
-          color: white;
-          text-decoration: none;
-        }
-
-        .navigation a.disabled {
-          cursor: not-allowed;
-        }
-
-        .section {
-          height: 1000px;
-          margin-bottom: 20px;
-        }
-      </style>
     </head>
 
     <body>
@@ -144,105 +61,12 @@
   <html>
     <head>
       <title>Strona z nawigacją</title>
-      <style>
-        body {
-          margin: 0;
-          padding: 0;
-          font-family: Arial, sans-serif;
-        }
-
-        .container {
-          width: 960px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-
-        .section {
-          padding: 40px 0;
-        }
-
-        .section-home {
-          height: 100vh;
-          background: url("link/do/obrazka.jpg") center/cover no-repeat;
-          position: relative;
-        }
-
-        .overlay {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(0, 0, 0, 0.5);
-        }
-
-        .navigation {
-          background-color: #333;
-          color: white;
-          padding: 20px;
-        }
-
-        .navigation ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          display: flex;
-          justify-content: center;
-        }
-
-        .navigation li {
-          margin-right: 20px;
-        }
-
-        .navigation li:last-child {
-          margin-right: 0;
-        }
-
-        .navigation a {
-          color: white;
-          text-decoration: none;
-        }
-
-        .navigation a.disabled {
-          cursor: not-allowed;
-        }
-
-        .section-pracownicy {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-wrap: wrap;
-        }
-
-        .pracownik {
-          width: 250px;
-          height: 250px;
-          margin: 10px;
-          border-radius: 50%;
-          background-size: cover;
-          background-position: center;
-          transition: transform 0.5s;
-        }
-
-        .pracownik:hover {
-          transform: scale(1.05);
-        }
-
-        .pracownik:nth-of-type(odd) {
-          background-image: url("link/do/zdjecia1.jpg");
-        }
-
-        .pracownik:nth-of-type(even) {
-          background-image: url("link/do/zdjecia2.jpg");
-        }
-      </style>
     </head>
 
     <body>
       <div class="container">
         <section class="section section-home">
           <div class="overlay"></div>
-          <!-- Treść i elementy w nagłówku -->
         </section>
 
         <nav class="navigation">
