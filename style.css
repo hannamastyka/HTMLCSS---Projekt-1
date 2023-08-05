@@ -77,52 +77,6 @@ body {
   padding: 40px 0;
 }
 
-.section-home {
-  height: 100vh;
-  background: url("link/do/obrazka.jpg") center/cover no-repeat;
-  position: relative;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.navigation {
-  background-color: #333;
-  color: white;
-  padding: 20px;
-}
-
-.navigation ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.navigation li {
-  margin-right: 20px;
-}
-
-.navigation li:last-child {
-  margin-right: 0;
-}
-
-.navigation a {
-  color: white;
-  text-decoration: none;
-}
-
-.navigation a.disabled {
-  cursor: not-allowed;
-}
-
 .section-pracownicy {
   display: flex;
   justify-content: center;
