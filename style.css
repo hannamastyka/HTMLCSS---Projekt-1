@@ -64,7 +64,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -104,4 +104,12 @@ body {
 
 .pracownik:nth-of-type(even) {
   background-image: url("link/do/zdjecia2.jpg");
+}
+
+.section-home {
+  height: 100vh;
+  background-image: url("https://picsum.photos/1920/800");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  position: relative;
 }
