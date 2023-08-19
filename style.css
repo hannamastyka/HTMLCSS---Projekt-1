@@ -30,7 +30,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .navigation {
@@ -127,9 +127,66 @@
 }
 
 .section-home {
-  background: url("https://picsum.photos/1920/800") center/cover no-repeat;
+  height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
 }
 
+.section-home-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.section-home-link {
+  padding: 8px 40px;
+  color: white;
+  border: 3px solid white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.section-home-header {
+  font-size: 35px;
+  font-weight: 700px;
+  margin-bottom: 70px;
+}
+
+.section-home-info {
+  font-size: 18px;
+  font-weight: 700px;
+  margin-bottom: 30px;
+}
+.section-home-specialists {
+  width: 866px;
+  height: 104px;
+  top: 474px;
+  left: 30px;
+}
+.section-home-tekst {
+  font-size: 18px;
+  font-weight: 700px;
+  margin-bottom: 30px;
+}
+.section-home-news {
+  width: 1068px;
+  height: 197px;
+  left: -208px;
+  top: 682px;
+}
+.section-infoforspecjalist {
+  font-size: 40px;
+  font-weight: 700px;
+  margin-bottom: 30px;
+  color: blue;
+}
