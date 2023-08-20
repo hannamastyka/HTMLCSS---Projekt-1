@@ -175,18 +175,24 @@
 }
 .section-home-tekst {
   font-size: 18px;
-  font-weight: 700px;
-  margin-bottom: 30px;
+  width: 150px;
+  height: 150px;
+  background: gray;
+  border-radius: 50%;
+  width: 1068px;
+  left: -208px;
 }
 .section-home-news {
   width: 1068px;
   height: 197px;
   left: -208px;
   top: 682px;
+  background: #907d7d;
 }
 .section-infoforspecjalist {
   font-size: 40px;
   font-weight: 700px;
   margin-bottom: 30px;
-  color: blue;
+  color: white;
+  background-color: #405d78;
 }
