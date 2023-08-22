@@ -162,33 +162,42 @@
   margin-bottom: 70px;
 }
 
-.section-home-info {
-  font-size: 18px;
-  font-weight: 700px;
-  margin-bottom: 30px;
-}
-.section-home-specialists {
-  width: 866px;
-  height: 104px;
-  top: 474px;
-  left: 30px;
-}
-.section-home-tekst {
-  font-size: 18px;
-  width: 150px;
-  height: 150px;
+.specialist-photo {
+  width: 197px;
+  height: 197px;
   background: gray;
   border-radius: 50%;
-  width: 1068px;
-  left: -208px;
+  flex-shrink: 0;
 }
-.section-home-news {
-  width: 1068px;
+.specialist {
+  display: flex;
+  gap: 60px;
+}
+
+.specialist-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 197px;
-  left: -208px;
-  top: 682px;
-  background: #907d7d;
 }
+.specialist-two {
+  display: flex;
+  gap: 150px;
+}
+.specialist-description-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 197px;
+}
+.specialist-photo-two {
+  width: 197px;
+  height: 197px;
+  background: #907d7d;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
 .section-infoforspecjalist {
   font-size: 40px;
   font-weight: 700px;
