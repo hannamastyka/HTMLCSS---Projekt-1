@@ -147,12 +147,20 @@
   background: gray;
   border-radius: 50%;
   flex-shrink: 0;
+  background-image: url("46381.jpg");
 }
 .specialist {
   display: flex;
   gap: 60px;
 }
-
+.specialist-name {
+  color: #000;
+  font-weight: 700;
+}
+.specialist-name-two {
+  color: #000;
+  font-weight: 700;
+}
 .specialist-description {
   display: flex;
   flex-direction: column;
@@ -171,7 +179,7 @@
 .specialist-photo-two {
   width: 197px;
   height: 197px;
-  background: #907d7d;
+  background-image: url("pracabiuro-min.jpg");
   border-radius: 50%;
   flex-shrink: 0;
 }
@@ -189,11 +197,17 @@
   background-size: cover;
   background-position: center;
   transition: transform 0.5s;
-  background: #fff;
+  background: white;
   margin-bottom: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .section-home-specialists {
