@@ -1,4 +1,5 @@
 * {
+  font-family: Roboto;
   margin: 0%;
   padding: 0;
   box-sizing: border-box;
@@ -9,16 +10,9 @@
   flex-direction: column;
 }
 
-.worker-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background: green;
-}
-
 .section-home {
   height: calc(100vh - 69px);
-  background: url("https://picsum.photos/1920/800") center/cover no-repeat;
+  background: url("tlo.png") center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -33,11 +27,6 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.navigation {
-  background-color: #333;
-  color: white;
-  padding: 20px;
-}
 .navigation .container {
   display: flex;
   justify-content: space-between;
@@ -98,16 +87,6 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.employee {
-  width: 250px;
-  height: 250px;
-  margin: 10px;
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-  transition: transform 0.5s;
 }
 
 .employee:hover {
@@ -182,13 +161,12 @@
 }
 .specialist-two {
   display: flex;
-  gap: 150px;
+  gap: 60px;
 }
 .specialist-description-two {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 197px;
 }
 .specialist-photo-two {
   width: 197px;
@@ -201,7 +179,44 @@
 .section-infoforspecjalist {
   font-size: 40px;
   font-weight: 700px;
-  margin-bottom: 30px;
-  color: white;
   background-color: #405d78;
+}
+
+.employee {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s;
+  background: #fff;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-home-specialists {
+  padding: 40px 0;
+}
+
+.section-tile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.navigation {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.navigation h6 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-family: Roboto;
+  color: #fff;
 }
