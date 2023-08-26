@@ -147,7 +147,8 @@
   background: gray;
   border-radius: 50%;
   flex-shrink: 0;
-  background-image: url("46381.jpg");
+  background-image: url("weterynarz.jpeg");
+  background-position: center;
 }
 .specialist {
   display: flex;
@@ -179,9 +180,10 @@
 .specialist-photo-two {
   width: 197px;
   height: 197px;
-  background-image: url("pracabiuro-min.jpg");
+  background-image: url("suchy-nos-u-kota-o-czym-mocnye-iwiadczya_1634659931348.png");
   border-radius: 50%;
   flex-shrink: 0;
+  background-position: -100px;
 }
 
 .section-infoforspecjalist {
