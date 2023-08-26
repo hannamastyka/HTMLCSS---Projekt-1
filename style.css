@@ -5,11 +5,6 @@
   box-sizing: border-box;
 }
 
-.worker-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .section-home {
   height: calc(100vh - 69px);
   background: url("tlo.png") center/cover no-repeat;
@@ -93,14 +88,6 @@
   transform: scale(1.05);
 }
 
-.employee:nth-of-type(odd) {
-  background-image: url("https://1drv.ms/i/s!ArlhzT5hLDoHklGilAzZNVOcwD5X?e=cyv0ez");
-}
-
-.employee:nth-of-type(even) {
-  background-image: url("link/do/zdjecia2.jpg");
-}
-
 .disabled {
   cursor: not-allowed;
 }
@@ -148,7 +135,7 @@
   border-radius: 50%;
   flex-shrink: 0;
   background-image: url("weterynarz.jpeg");
-  background-position: center;
+  background-position: 45% 37%;
 }
 .specialist {
   display: flex;
@@ -183,15 +170,28 @@
   background-image: url("suchy-nos-u-kota-o-czym-mocnye-iwiadczya_1634659931348.png");
   border-radius: 50%;
   flex-shrink: 0;
-  background-position: -100px;
+  background-position: -110%;
 }
 
-.section-infoforspecjalist {
-  font-size: 40px;
-  font-weight: 700px;
+.section-info-for-specjalist {
+  font-weight: 700;
   background-color: #405d78;
 }
-
+.specjialist-section {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.specjialist-section-header {
+  color: #fff;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 .employee {
   width: 250px;
   height: 250px;
