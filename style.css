@@ -1,10 +1,12 @@
 * {
-  font-family: Roboto;
   margin: 0%;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 .section-home {
   height: calc(100vh - 69px);
   background: url("tlo.png") center/cover no-repeat;
@@ -99,7 +101,7 @@
 }
 
 .home-container {
-  width: 100%;
+  width: 62%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -113,6 +115,11 @@
   border: 3px solid white;
   text-decoration: none;
   font-size: 18px;
+  transition: 1s;
+}
+.section-home-link:hover {
+  color: black;
+  background: white;
 }
 
 .section-home-header {
@@ -166,9 +173,13 @@
   font-weight: 700;
   background-color: #405d78;
 }
+.section-home-specialists {
+  padding: 40px 0;
+  width: 386px;
+  height: 35px;
+}
 .specjialist-section {
   color: #fff;
-  font-family: Roboto;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -181,7 +192,7 @@
   font-weight: 700;
   line-height: normal;
 }
-.employee {
+.box {
   width: 250px;
   height: 250px;
   margin: 10px;
@@ -194,15 +205,10 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: Roboto;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-
-.section-home-specialists {
-  padding: 40px 0;
 }
 
 .section-tile {
@@ -217,11 +223,45 @@
   padding: 20px;
 }
 
-.navigation h6 {
+.footer p {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  font-family: Roboto;
   color: #fff;
+}
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer li {
+  margin-right: 20px;
+}
+
+.footer li:last-child {
+  margin-right: 0;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+p.section-home-info {
+  margin-bottom: 25px;
 }
