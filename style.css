@@ -123,9 +123,9 @@ html {
 }
 
 .section-home-header {
-  font-size: 35px;
+  font-size: 36px;
   font-weight: 700px;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 .specialist-photo {
@@ -144,6 +144,7 @@ html {
 .specialist-name {
   color: #000;
   font-weight: 700;
+  margin-bottom: 15px;
 }
 .specialist-description {
   display: flex;
@@ -154,6 +155,7 @@ html {
 .specialist-two {
   display: flex;
   gap: 60px;
+  margin-bottom: 40px;
 }
 .specialist-description-two {
   display: flex;
@@ -175,23 +177,18 @@ html {
 }
 .section-home-specialists {
   padding: 40px 0;
-  width: 386px;
-  height: 35px;
+  color: #152d41;
+  font-size: 36px;
 }
 .specjialist-section {
   color: #fff;
   padding: 45px 0;
-  width: 386px;
-  height: 35px;
-}
-
-.specjialist-section-header {
-  color: #fff;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
+
 .box {
   width: 250px;
   height: 250px;
@@ -209,12 +206,14 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  flex-direction: column;
+  position: relative;
 }
 
 .section-tile {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .navigation {
@@ -264,5 +263,22 @@ html {
   text-decoration: none;
 }
 p.section-home-info {
-  margin-bottom: 25px;
+  margin-bottom: 35px;
+}
+.fa-brands {
+  font-size: 31px;
+}
+
+.specialist-two .specialist-description {
+  text-align: right;
+}
+
+.dot {
+  width: 22px;
+  height: 22px;
+  background: #e07a64;
+  border-radius: 50%;
+  position: absolute;
+  top: -11px;
+  left: -11px;
 }
