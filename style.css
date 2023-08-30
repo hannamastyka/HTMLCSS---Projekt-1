@@ -180,11 +180,11 @@ html {
 }
 .specjialist-section {
   color: #fff;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  padding: 45px 0;
+  width: 386px;
+  height: 35px;
 }
+
 .specjialist-section-header {
   color: #fff;
   font-size: 36px;
@@ -233,7 +233,8 @@ html {
 .footer {
   background-color: #333;
   color: white;
-  padding: 20px;
+  padding: 30px;
+  font-size: 18px;
 }
 
 .footer .container {
