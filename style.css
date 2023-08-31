@@ -70,7 +70,7 @@ html {
   z-index: 2;
 }
 .container {
-  width: 960px;
+  width: 96%;
   margin: 0 auto;
 }
 
@@ -209,7 +209,9 @@ html {
   flex-direction: column;
   position: relative;
 }
-
+.box:hover {
+  transform: scale(1.05);
+}
 .section-tile {
   display: flex;
   flex-wrap: wrap;
@@ -281,4 +283,13 @@ p.section-home-info {
   position: absolute;
   top: -11px;
   left: -11px;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 960px;
+  }
+  .specialist {
+    flex-direction: row;
+  }
 }
