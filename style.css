@@ -139,8 +139,13 @@ html {
 }
 .specialist {
   display: flex;
+  flex-direction: column;
   gap: 60px;
 }
+.specialist:nth-of-type(even) {
+  margin-bottom: 40px;
+}
+
 .specialist-name {
   color: #000;
   font-weight: 700;
@@ -152,11 +157,7 @@ html {
   justify-content: center;
   height: 197px;
 }
-.specialist-two {
-  display: flex;
-  gap: 60px;
-  margin-bottom: 40px;
-}
+
 .specialist-description-two {
   display: flex;
   flex-direction: column;
@@ -291,5 +292,8 @@ p.section-home-info {
   }
   .specialist {
     flex-direction: row;
+  }
+  .specialist:nth-of-type(even) {
+    flex-direction: row-reverse;
   }
 }
