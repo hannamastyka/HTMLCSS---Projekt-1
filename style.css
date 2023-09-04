@@ -55,11 +55,6 @@ html {
   cursor: not-allowed;
 }
 
-.section {
-  height: 1000px;
-  margin-bottom: 20px;
-}
-
 .body {
   margin: 0;
   padding: 0;
@@ -72,10 +67,6 @@ html {
 .container {
   width: 96%;
   margin: 0 auto;
-}
-
-.section {
-  padding: 40px 0;
 }
 
 .section-employee {
